@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: IslemBlok
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+      javax:
+        persistence:
+          validation:
+            mode: none
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/IslemBlok
+    username: postgres
+    password: 123456789
+security:
+  jwt:
+    secret: "aBcDeFgHiJkLmNoPqRsTuVwXyZ1234567890AbCdEfGhIjKlMnOpQrStUvWxYz1234"
